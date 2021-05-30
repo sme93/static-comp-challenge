@@ -1,12 +1,16 @@
 <html lang="eng">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/eae4585e69.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <title>The Dude Abides</title>
     </head>
     <body class="landing page">
         <header class="header">
             <div class="header-login">
+                <i class="header-link active far fa-user-circle"></i>
                 <form action="drop-down">
                     <select name="username" id="userNameInput">
                         <option value="ElDuderino">El Duderino/admin</option>
@@ -17,16 +21,19 @@
             <div class="header-navigation">
                 <nav>
                     <ul class="header-links">
-                        <li class="header-link active">Shares</li>
-                        <li class="header-link">Playlists</li>
-                        <li class="header-link">Personal Videos</li>
+                        <li class="header-link active uppercase">
+                            <i class="fas fa-share-alt link-icon"></i>Shares</li>
+                        <li class="header-link uppercase">
+                            <i class="fas fa-list-ul link-icon"></i>Playlists</li>
+                        <li class="header-link uppercase">
+                            <i class="far fa-user link-icon"></i>Personal Videos</li>
                     </ul>
                 </nav>
-                <h1>The Dude Abides</h1>
+                <h1 class="header-company-name">The Dude Abides <i class="fas fa-bowling-ball"></i></h1>
             </div>
         </header>
         <main class="page">
-            <div class="shares">
+            <div class="page-heading">
                 <h2>Shares</h2>
             </div>
             <section class="grid">
@@ -35,10 +42,10 @@
                         <div class="card-photo-area">
                             <img class="card-image" src="https://filmschoolrejects.com/wp-content/uploads/2020/04/BigLebowski.jpg" alt="the big lebowski">
                             <div class="card-photo-area-overlay">
-                                <button>REPLY</button>
-                                <div class="card-views">
-                                    <p>Views</p>
-                                    <p>11</p>
+                                <button class="reply-button"><i class="fas fa-reply"></i></button>
+                                <div class="card-views-section">
+                                    <p class="card-views uppercase">Views</p>
+                                    <p class="card-views-number">11</p>
                                 </div>
                             </div>
                         </div>
@@ -58,10 +65,10 @@
                         <div class="card-photo-area">
                             <img class="card-image" src="https://cdn.costumewall.com/wp-content/uploads/2017/01/walter-sobchak.jpg" alt="walter sobchak">
                             <div class="card-photo-area-overlay">
-                                <button>REPLY</button>
-                                <div class="card-views">
-                                    <p>Views</p>
-                                    <p>06</p>
+                                <button class="reply-button"><i class="fas fa-reply"></i></button>
+                                <div class="card-views-section">
+                                    <p class="card-views uppercase">Views</p>
+                                    <p class="card-views-number">06</p>
                                 </div>
                             </div>
                         </div>
@@ -81,10 +88,10 @@
                         <div class="card-photo-area">
                             <img class="card-image" src="https://img.cinemablend.com/filter:scale/quill/8/3/e/b/5/8/83eb58b14ff5e7843837ea747f6be045d0617705.jpg?mw=600" alt="donny">
                             <div class="card-photo-area-overlay">
-                                <button>REPLY</button>
-                                <div class="card-views">
-                                    <p>Views</p>
-                                    <p>02</p>
+                                <button class="reply-button"><i class="fas fa-reply"></i></button>
+                                <div class="card-views-section">
+                                    <p class="card-views uppercase">Views</p>
+                                    <p class="card-views-number">02</p>
                                 </div>
                             </div>
                         </div>
@@ -104,10 +111,10 @@
                         <div class="card-photo-area">
                             <img class="card-image" src="https://d2j1wkp1bavyfs.cloudfront.net/wp-content/legacy/posts/0df56e93-0683-41cc-af72-7ff11bb698c6.jpg" alt="maude">
                             <div class="card-photo-area-overlay">
-                                <button>REPLY</button>
-                                <div class="card-views">
-                                    <p>Views</p>
-                                    <p>21</p>
+                                <button class="reply-button"><i class="fas fa-reply"></i></button>
+                                <div class="card-views-section">
+                                    <p class="card-views uppercase">Views</p>
+                                    <p class="card-views-number">21</p>
                                 </div>
                             </div>
                         </div>
@@ -127,10 +134,10 @@
                         <div class="card-photo-area">
                             <img class="card-image" src="https://movies.mxdwn.com/wp-content/uploads/2020/01/biglewbowskijesus-e1562611587802.jpg" alt="jesus quintana">
                             <div class="card-photo-area-overlay">
-                                <button>REPLY</button>
-                                <div class="card-views">
-                                    <p>Views</p>
-                                    <p>01</p>
+                                <button class="reply-button">REPLY</button>
+                                <div class="card-views-section">
+                                    <p class="card-views uppercase">Views</p>
+                                    <p class="card-views-number">01</p>
                                 </div>
                             </div>
                         </div>
@@ -150,10 +157,10 @@
                         <div class="card-photo-area">
                             <img class="card-image" src="https://www.tasteofcinema.com///wp-content/uploads/2013/01/little-larry-sellers.jpg" alt="larry sellers">
                             <div class="card-photo-area-overlay">
-                                <button>REPLY</button>
-                                <div class="card-views">
-                                    <p>Views</p>
-                                    <p>00</p>
+                                <button class="reply-button"><i class="fas fa-reply"></i></button>
+                                <div class="card-views-section">
+                                    <p class="card-views uppercase">Views</p>
+                                    <p class="card-views-number">00</p>
                                 </div>
                             </div>
                         </div>
@@ -173,10 +180,10 @@
                         <div class="card-photo-area">
                             <img class="card-image" src="https://i.redd.it/23j1qlj5f2121.jpg" alt="autobahn">
                             <div class="card-photo-area-overlay">
-                                <button>REPLY</button>
-                                <div class="card-views">
-                                    <p>Views</p>
-                                    <p>66</p>
+                                <button class="reply-button"><i class="fas fa-reply"></i></button>
+                                <div class="card-views-section">
+                                    <p class="card-views uppercase">Views</p>
+                                    <p class="card-views-number">66</p>
                                 </div>
                             </div>
                         </div>
@@ -196,10 +203,10 @@
                         <div class="card-photo-area">
                             <img class="card-image" src="https://i.ytimg.com/vi/upUjNZRAapQ/mqdefault.jpg" alt="bunny">
                             <div class="card-photo-area-overlay">
-                                <button>REPLY</button>
-                                <div class="card-views">
-                                    <p>Views</p>
-                                    <p>99</p>
+                                <button class="reply-button"><i class="fas fa-reply"></i></button>
+                                <div class="card-views-section">
+                                    <p class="card-views uppercase">Views</p>
+                                    <p class="card-views-number">99</p>
                                 </div>
                             </div>
                         </div>
