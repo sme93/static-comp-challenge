@@ -3,6 +3,22 @@
   font-family: "Roboto", sans-serif;
 }
 
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form {
+  margin: 0;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 h1 {
   color: #ffffff;
 }
@@ -43,17 +59,28 @@ ul {
   color: #c2c2c2;
 }
 
+.page {
+  padding: 1.5rem;
+}
+
 .landing-page {
   background-color: #efefef;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
 }
 
 .card {
   background-color: #ffffff;
   box-shadow: 5px 10px;
   width: 200px;
+  color: #868686;
 }
 
-img {
+.card-image {
   object-fit: cover;
   width: 100%;
   height: 100px;
@@ -75,4 +102,44 @@ img {
 
 .card-views {
   color: #ffffff;
+}
+
+.card-content-area {
+  padding: 1rem;
+}
+
+.card-heading {
+  font-size: 1.25rem;
+}
+
+.card-date {
+  font-size: 0.85rem;
+  color: #cdcdcd;
+  margin-bottom: 1rem;
+}
+
+.card-link-area {
+  background-color: #cdcdcd;
+  padding: 0.5rem;
+}
+
+.card-secondary-text {
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.card-text {
+  font-size: 1.5rem;
+}
+
+.card-number {
+  font-size: 2.75rem;
+  color: #3dbcfc;
+  margin-bottom: 0.5rem;
+}
+
+/* utility classes */
+.uppercase {
+  text-transform: uppercase;
 }
