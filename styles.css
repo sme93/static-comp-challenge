@@ -1,0 +1,48 @@
+* {
+  border: 1px solid red;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+h2 {
+  color: #5f5f5f;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  background-color: #2b2b2b;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-login {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-links {
+  display: flex;
+}
+
+.header-link {
+  color: #8a8a8a;
+}
+
+.header-link.active {
+  color: #c2c2c2;
+}
+
+.landing-page {
+  background-color: #efefef;
+}
