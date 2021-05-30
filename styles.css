@@ -1,17 +1,138 @@
-* {
-  font-family: "Helvetica", serif;
-}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
 ul,
 li,
-form {
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
-  font-weight: 400;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ***END RESET*** */
+
+* {
+  box-sizing: border-box;
+  font-family: "Helvetica", serif;
 }
 
 a {
@@ -33,16 +154,43 @@ ul {
 
 .header {
   background-color: #2b2b2b;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
 }
 
 .header-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: flex-end;
+  padding: 1rem;
+}
+
+.fa-user-circle {
+  font-size: 1.5rem;
+  padding-right: 0.25rem;
+  color: #c2c2c2;
+}
+
+.drop-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop-down select {
+  background-color: transparent;
+  color: #299ddb;
+  border: none;
 }
 
 .header-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
 }
@@ -55,6 +203,8 @@ ul {
 }
 
 .header-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
@@ -62,6 +212,8 @@ ul {
 .header-link {
   color: #8a8a8a;
   padding: 0 1rem 1.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: flex-end;
 }
@@ -93,15 +245,15 @@ ul {
 }
 
 .grid {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
   gap: 1rem;
 }
 
 .card {
   background-color: #ffffff;
-  box-shadow: 5px 10px;
-  width: 200px;
+  box-shadow: 1px 1px 5px 3px #a5a5a5;
   color: #868686;
 }
 
@@ -109,6 +261,7 @@ ul {
   object-fit: cover;
   width: 100%;
   height: 200px;
+  max-width: 100%;
 }
 
 .card-photo-area {
@@ -121,6 +274,8 @@ ul {
   top: 0;
   left: 0;
   right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -129,7 +284,6 @@ ul {
 .reply-button {
   display: block;
   border-radius: 50%;
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   height: 4rem;
   width: 4rem;
@@ -143,25 +297,18 @@ ul {
 
 .card-views-section {
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
 }
 
-.card-views {
-  /* margin: 1.25rem; */
-}
-
 .card-views-number {
   font-size: 2.75rem;
-  /* margin-top: 0; */
 }
 
 .card-content-area {
   padding: 1rem;
-}
-
-.card-heading {
-  font-size: 1.25rem;
 }
 
 .card-date {
@@ -171,9 +318,10 @@ ul {
 }
 
 .card-link-area {
-  background-color: #cdcdcd;
+  background-color: #efefef;
   padding: 0.5rem;
   padding-bottom: 1rem;
+  overflow-wrap: break-word;
 }
 
 .card-secondary-text {
@@ -183,6 +331,7 @@ ul {
 }
 
 .card-text {
+  min-height: 3rem;
   font-size: 1.5rem;
 }
 
