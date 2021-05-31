@@ -345,3 +345,30 @@ ul {
 .uppercase {
   text-transform: uppercase;
 }
+
+/* Media-queries */
+@media screen and (max-width: 960px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+
+  .header-navigation {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .grid {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+
+  .header-links {
+    flex-direction: column;
+  }
+}
