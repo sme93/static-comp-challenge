@@ -1,15 +1,19 @@
 <html lang="eng">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/eae4585e69.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <title>The Dude Abides</title>
     </head>
-    <body class="landing page">
+    <body class="landing-page">
         <header class="header">
             <div class="header-login">
-                <form action="drop-down">
+                <i class="active far fa-user-circle"></i>
+                <form class="drop-down" action="drop-down">
                     <select name="username" id="userNameInput">
-                        <option value="ElDuderino">El Duderino/admin</option>
+                        <option value="ElDuderino">El Duderino</option>
                         <option value="other">other</option>
                     </select>
                 </form>
@@ -17,34 +21,204 @@
             <div class="header-navigation">
                 <nav>
                     <ul class="header-links">
-                        <li class="header-link active">Shares</li>
-                        <li class="header-link">Playlists</li>
-                        <li class="header-link">Personal Videos</li>
+                        <li class="header-link active uppercase">
+                            <i class="fas fa-share-alt link-icon"></i>Rugs</li>
+                        <li class="header-link uppercase">
+                            <i class="fas fa-list-ul link-icon"></i>Creedence</li>
+                        <li class="header-link uppercase">
+                            <i class="far fa-user link-icon"></i>Cocktail Recipes</li>
                     </ul>
                 </nav>
-                <h1>The Dude Abides</h1>
+                <h1 class="header-company-name">The Dude Abides <i class="fas fa-bowling-ball"></i></h1>
             </div>
         </header>
-        <main>
-            <div>
-            <h2>Shares</h2>
+        <main class="page">
+            <div class="page-heading">
+                <h2>Shares</h2>
             </div>
-            <section>
+            <section class="grid">
                 <article>
-                    <img src="" alt="">
-                    <button>REPLY</button>
-                    <div>
-                        <p>Views</p>
-                        <p>11</p>
+                    <div class="card">
+                        <div class="card-photo-area">
+                            <img class="card-image" src="https://filmschoolrejects.com/wp-content/uploads/2020/04/BigLebowski.jpg" alt="the big lebowski">
+                            <div class="card-photo-area-overlay">
+                                <button class="reply-button"><i class="fas fa-reply"></i></button>
+                                <div class="card-views-section">
+                                    <p class="card-views uppercase">Views</p>
+                                    <p class="card-views-number">11</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content-area">
+                            <h3 class="card-text">The Dude</h3>
+                            <p class="card-date">Thursday 01/18/98 11:11am</p>
+                            <div class="card-link-area"><a href="https://www.imdb.com/title/tt0118715/quotes/qt0464783">https://www.imdb.com/title/tt0118715/quotes/qt0464783</a></div>
+                            <p class="card-secondary-text uppercase">Playlist</p>
+                            <p class="card-text">There's a beverage here!</p>
+                            <p class="card-secondary-text uppercase">Attachments</p>
+                            <p class="card-number">07</p>
+                        </div>    
                     </div>
-                    <div>
-                        <h3>The Dude</h3>
-                        <p>Thursday 01/18/98 11:11am</p>
-                        <div>link</div>
-                        <p>Playlist</p>
-                        <p>There's a beverage here!</p>
-                        <p>Attachments</p>
-                        <p>07</p>
+                </article>
+                <article>
+                    <div class="card">
+                        <div class="card-photo-area">
+                            <img class="card-image" src="https://cdn.costumewall.com/wp-content/uploads/2017/01/walter-sobchak.jpg" alt="walter sobchak">
+                            <div class="card-photo-area-overlay">
+                                <button class="reply-button"><i class="fas fa-reply"></i></button>
+                                <div class="card-views-section">
+                                    <p class="card-views uppercase">Views</p>
+                                    <p class="card-views-number">06</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content-area">
+                            <h3 class="card-text">Walter</h3>
+                            <p class="card-date">Saturday 01/18/98 03:00pm</p>
+                            <div class="card-link-area"><a href="https://www.imdb.com/title/tt0118715/quotes/qt0464783">https://www.imdb.com/title/tt0118715/quotes/qt0464783</a></div>
+                            <p class="card-secondary-text uppercase">Playlist</p>
+                            <p class="card-text">I can get you a toe.</p>
+                            <p class="card-secondary-text uppercase">Attachments</p>
+                            <p class="card-number">03</p>
+                        </div>    
+                    </div>
+                </article>
+                <article>
+                    <div class="card">
+                        <div class="card-photo-area">
+                            <img class="card-image" src="https://img.cinemablend.com/filter:scale/quill/8/3/e/b/5/8/83eb58b14ff5e7843837ea747f6be045d0617705.jpg?mw=600" alt="donny">
+                            <div class="card-photo-area-overlay">
+                                <button class="reply-button"><i class="fas fa-reply"></i></button>
+                                <div class="card-views-section">
+                                    <p class="card-views uppercase">Views</p>
+                                    <p class="card-views-number">02</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content-area">
+                            <h3 class="card-text">Donny</h3>
+                            <p class="card-date">Monday 01/18/98 10:02am</p>
+                            <div class="card-link-area"><a href="https://www.imdb.com/title/tt0118715/quotes/qt0464783">https://www.imdb.com/title/tt0118715/quotes/qt0464783</a></div>
+                            <p class="card-secondary-text uppercase">Playlist</p>
+                            <p class="card-text">I am the walrus?</p>
+                            <p class="card-secondary-text uppercase">Attachments</p>
+                            <p class="card-number">05</p>
+                        </div>    
+                    </div>
+                </article>
+                <article>
+                    <div class="card">
+                        <div class="card-photo-area">
+                            <img class="card-image" src="https://d2j1wkp1bavyfs.cloudfront.net/wp-content/legacy/posts/0df56e93-0683-41cc-af72-7ff11bb698c6.jpg" alt="maude">
+                            <div class="card-photo-area-overlay">
+                                <button class="reply-button"><i class="fas fa-reply"></i></button>
+                                <div class="card-views-section">
+                                    <p class="card-views uppercase">Views</p>
+                                    <p class="card-views-number">21</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content-area">
+                            <h3 class="card-text">Maude</h3>
+                            <p class="card-date">Sunday 01/18/98 02:50am</p>
+                            <div class="card-link-area"><a href="https://www.imdb.com/title/tt0118715/quotes/qt0464783">https://www.imdb.com/title/tt0118715/quotes/qt0464783</a></div>
+                            <p class="card-secondary-text uppercase">Playlist</p>
+                            <p class="card-text">Don't be fatuous, Jeffrey.</p>
+                            <p class="card-secondary-text uppercase">Attachments</p>
+                            <p class="card-number">02</p>
+                        </div>    
+                    </div>
+                </article>
+                <article>
+                    <div class="card">
+                        <div class="card-photo-area">
+                            <img class="card-image" src="https://movies.mxdwn.com/wp-content/uploads/2020/01/biglewbowskijesus-e1562611587802.jpg" alt="jesus quintana">
+                            <div class="card-photo-area-overlay">
+                                <button class="reply-button"><i class="fas fa-reply"></i></button>
+                                <div class="card-views-section">
+                                    <p class="card-views uppercase">Views</p>
+                                    <p class="card-views-number">01</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content-area">
+                            <h3 class="card-text">Jesus</h3>
+                            <p class="card-date">Thursday 01/18/98 11:11am</p>
+                            <div class="card-link-area"><a href="https://www.imdb.com/title/tt0118715/quotes/qt0464783">https://www.imdb.com/title/tt0118715/quotes/qt0464783</a></div>
+                            <p class="card-secondary-text uppercase">Playlist</p>
+                            <p class="card-text">That creep can roll.</p>
+                            <p class="card-secondary-text uppercase">Attachments</p>
+                            <p class="card-number">09</p>
+                        </div>    
+                    </div>
+                </article>
+                <article>
+                    <div class="card">
+                        <div class="card-photo-area">
+                            <img class="card-image" src="https://www.tasteofcinema.com///wp-content/uploads/2013/01/little-larry-sellers.jpg" alt="larry sellers">
+                            <div class="card-photo-area-overlay">
+                                <button class="reply-button"><i class="fas fa-reply"></i></button>
+                                <div class="card-views-section">
+                                    <p class="card-views uppercase">Views</p>
+                                    <p class="card-views-number">00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content-area">
+                            <h3 class="card-text">Larry</h3>
+                            <p class="card-date">Friday 01/18/98 09:20pm</p>
+                            <div class="card-link-area"><a href="https://www.imdb.com/title/tt0118715/quotes/qt0464783">lhttps://www.imdb.com/title/tt0118715/quotes/qt0464783</a></div>
+                            <p class="card-secondary-text uppercase">Playlist</p>
+                            <p class="card-text">Is this your homework, Larry?</p>
+                            <p class="card-secondary-text uppercase">Attachments</p>
+                            <p class="card-number">12</p>
+                        </div>    
+                    </div>
+                </article>
+                <article>
+                    <div class="card">
+                        <div class="card-photo-area">
+                            <img class="card-image" src="https://i.redd.it/23j1qlj5f2121.jpg" alt="autobahn">
+                            <div class="card-photo-area-overlay">
+                                <button class="reply-button"><i class="fas fa-reply"></i></button>
+                                <div class="card-views-section">
+                                    <p class="card-views uppercase">Views</p>
+                                    <p class="card-views-number">66</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content-area">
+                            <h3 class="card-text">Autobahn</h3>
+                            <p class="card-date">Tuesday 01/18/98 03:30am</p>
+                            <div class="card-link-area"><a href="https://www.imdb.com/title/tt0118715/quotes/qt0464783">https://www.imdb.com/title/tt0118715/quotes/qt0464783</a></div>
+                            <p class="card-secondary-text uppercase">Playlist</p>
+                            <p class="card-text">We wants the money, Lebowski.</p>
+                            <p class="card-secondary-text uppercase">Attachments</p>
+                            <p class="card-number">06</p>
+                        </div>    
+                    </div>
+                </article>
+                <article>
+                    <div class="card">
+                        <div class="card-photo-area">
+                            <img class="card-image" src="https://i.ytimg.com/vi/upUjNZRAapQ/mqdefault.jpg" alt="bunny">
+                            <div class="card-photo-area-overlay">
+                                <button class="reply-button"><i class="fas fa-reply"></i></button>
+                                <div class="card-views-section">
+                                    <p class="card-views uppercase">Views</p>
+                                    <p class="card-views-number">99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content-area">
+                            <h3 class="card-text">Bunny</h3>
+                            <p class="card-date">Saturday 01/18/98 11:30am</p>
+                            <div class="card-link-area"><a href="https://www.imdb.com/title/tt0118715/quotes/qt0464783">https://www.imdb.com/title/tt0118715/quotes/qt0464783</a></div>
+                            <p class="card-secondary-text uppercase">Playlist</p>
+                            <p class="card-text">Brandt can't watch.</p>
+                            <p class="card-secondary-text uppercase">Attachments</p>
+                            <p class="card-number">08</p>
+                        </div>    
                     </div>
                 </article>
             </section>
